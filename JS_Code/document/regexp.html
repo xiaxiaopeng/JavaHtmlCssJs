@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        //测试字符串中是否包含字母e
+        // var patt = new RegExp("e");
+        // alert(patt);
+        // var patt = /e/;
+
+        var patt = /[a-z]/;
+        // var patt = /[A-z]/;
+        // var patt = /[0-9]/;
+        // var patt = /\w/;//从头到尾检查
+        // var patt=/\a*/;
+        // var patt=/\a+/;
+        var str = "abced";
+        // var patt = /a?/;//表示是否包含1个或0个a
+
+        // var patt = /a{3}/;表示是否包含连续三个字符a
+
+        // var patt = /a{3,5}/;//表示最少3个连续的a，最多5个连续的a
+
+        // var patt = /a{3,}/;//表示至少3个连续的a，最多不限制
+
+        // var patt = /a$/;//表示是否以a结尾的
+
+        var patt = /^a/;//表示是否以a开头的
+        alert(patt.test(str));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

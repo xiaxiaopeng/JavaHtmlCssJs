@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>框架集</title>
+</head>
+<!--    使用frameset创建一个框架集 不能再使用body  两者出现冲突
+        rows指定一行一行的摆放
+-->
+<frameset cols="30%,30%,*">
+<!--    引入几个页面就写几个frame-->
+    <frame src="../phone.html">
+    <frame src="../demo03.html">
+    <frameset rows="30%,30%,*">
+        <frame src="../demo02.html">
+        <frame src="../demo02.html">
+        <frame src="../demo02.html">
+    </frameset>
+</frameset>
+
+</html>

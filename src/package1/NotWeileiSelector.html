@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>否定伪类选择器</title>
+<!--    为所有的p元素设置一个背景颜色为黄色，除了class值为hello的-->
+    <style>
+        p:not(.hello){
+            background-color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+<!--    -->
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p class="hello">我是一个p标签</p>
+    <p>我是一个p标签</p>
+    <p>我是一个p标签</p>
+</body>
+</html>

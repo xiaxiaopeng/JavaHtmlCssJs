@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>练习</title>
+</head>
+<style type="text/css">
+    .btn:link{
+        display: block;/*将内联元素转换为块元素*/
+        width: 93px;
+        height: 29px;
+        background-image: url("../key/btn2.png");
+        background-repeat: no-repeat;
+        background-color: red;
+        opacity: 0.9;
+    }
+    .btn:hover{/*发光*/
+        background-image: url("../key/btn2.png");
+        background-position: -93px;
+        /*    三张图片的移动位置进行切换*/
+
+    }
+    .btn:active{/*按下出现抖动*/
+        background-image: url("../key/btn2.png");
+        background-position: -186px;
+        /*    三张图片的移动位置进行切换*/
+    }
+</style>
+<body>
+<!--    创建一个超链接-->
+<a class="btn" href="http://www.baidu.com"></a>
+</body>
+</html>

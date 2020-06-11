@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onclickFunc() {
+            //当操作一个标签的时候，先获取该标签对象
+            var userNameObj = document.getElementById("userName");
+            var userNameText = userNameObj.value;
+            var patt = /^\w{5,12}$/;
+            var userNameSpanObj = document.getElementById("userNameSpan");
+
+            // alert(userNameObj);//这就是dom对象
+
+            // alert(userNameObj.id);
+            // alert(userNameObj.type);
+            // alert(userNameObj.value);
+            // var userNameText = userNameObj.value;
+
+            userNameSpanObj.innerHTML = "xxp真厉害";
+            //测试字符串是否匹配  返回值为true或false
+            if(patt.test(userNameText)){
+                // alert("用户名合法");
+                userNameSpanObj.innerHTML='<img src="right.png" width="16" height="16" >';
+            }else{
+                // alert("用户名不合法");
+                userNameSpanObj.innerHTML = '<img src="wrong.png" width="16" height="16" >';
+            }
+        }
+        /*
+        * 当用户点击了校验按钮，要获取输出框的内容，然后验证是否合法
+        * 验证规则：必须字母  数字  下划线  且  长度在5-12位*/
+    </script>
+</head>
+<body>
+    用户名<input type="text" id="userName" value="xxp">
+    <span id="userNameSpan" style="color: red"></span>
+    <button onclick="onclickFunc()">校验</button>
+</body>
+</html>

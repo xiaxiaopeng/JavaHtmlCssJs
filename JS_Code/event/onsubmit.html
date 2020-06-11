@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function onsubmitFunc() {
+            alert('静态注册表单提交至服务器');
+            return false
+        }
+
+        window.onsubmit = function () {
+           var onsubmitObj = document.getElementById("onsubmit");
+           onsubmitObj.onsubmit = function () {
+               alert('动态注册表提交至服务器')
+               return false;
+           }
+        }
+    </script>
+</head>
+<body>
+    <form action="http://localhost:8080" method="get" onsubmit="return onsubmitFunc()">
+        <input type="submit" value="静态注册">
+    </form>
+    <form action="http://localhost:8080" method="get" id="onsubmit">
+        <input type="submit" value="动态注册">
+    </form>
+</body>
+</html>

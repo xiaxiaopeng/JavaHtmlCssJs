@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<form action="target.html">
+    <fieldset>/*框住一部分    用户名  密码*/
+        <label for="um">用户名</label>
+        <input id="um" type="text" name="username"  /> <br />
+        密码<input type="password" name="password"> <br /> <br />
+        <legend>用户信息</legend>/*框框信息名称*/
+    </fieldset>
+
+    <fieldset>
+<!--    使用input创建一个单选按钮,为了防止冲突，可以对两个输入进行分组-->
+    性别<input type="radio" name="gender" value="male" />男
+        <input type="radio" name="gender" value="female" checked="checked"/>女
+    <br><br>
+
+<!--    多选框  可以使用type的checkbox-->
+    爱好<input type="checkbox" name="hobby" value="football" />足球
+        <input type="checkbox" name="hobby" value="basketball" checked="checked" />篮球
+        <input type="checkbox" name="hobby" value="ping-pong" />乒乓球
+        <input type="checkbox" name="hobby" value="volleyball" checked="checked" />排球
+    <br><br>
+
+<!--    下拉列表 给select添加一个multiple="multiple" 则下拉列表变为一个多选的下拉列表-->
+    你喜欢的明星<select name="star" >
+    <optgroup label="女明星">
+        <option value="fbb">范冰冰</option>
+        <option value="lxr">林心如</option>
+    </optgroup>
+
+    <optgroup label="男明星">
+        <option value="zbs">赵本山</option>
+        <option value="ldh" selected="selected">刘德华</option>
+    </optgroup>
+</select>
+    <br />
+    <br />
+        <legend>用户爱好</legend>/*框框信息名称*/
+    </fieldset>
+
+<!--    使用文本域-->
+    自我介绍 <textarea name="info" cols="30" rows="10"></textarea>
+
+    <br><br>
+    <!--    提交按钮-->
+    <input type="submit" value="注册">
+    <input type="reset" value="重置">
+
+    <input type="button" value="按钮">
+    <br><br>
+    <button type="submit">提交</button>
+    <button type="reset">重置</button>
+    <button type="button">按钮</button>
+
+</form>
+</body>
+</html>

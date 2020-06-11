@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style type="text/css">
+        .box1{
+            width: 100px;
+            height: 100px;
+            /*四个值得时候按顺时针赋予宽度
+
+            三个值的时候，上  左右   下
+            两个值的时候   上下   左右
+
+            border-xxx-width
+            xxx值可能为top  right  bottom  left
+
+            border-color的规则  和宽度规则的设置是一致的
+
+            设置边框的颜色
+            border-color
+            border-xxx-color
+            xxx值可能为top  right  bottom  left
+            */
+            background-color: yellowgreen;
+            border-width: 10px 20px 40px;
+            border-color: red;
+            /*solid实线  none表示默认   dotted 点状边框   dashed虚线边框  double 表示双线边框  */
+            border-style: solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+
+    </div>
+</body>
+</html>

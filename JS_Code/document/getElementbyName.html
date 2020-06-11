@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function AllCheck() {
+            var hobbies = document.getElementsByName("hobby");
+            alert(hobbies);
+
+        }
+        function AllNotCheck() {
+
+        }
+        function NotCheck() {
+
+        }
+        // AllCheck();
+    </script>
+</head>
+<body>
+    兴趣爱好：<br>
+    <input type="checkbox" name="hobby" value="篮球"> basketball<br>
+    <input type="checkbox" name="hobby" value="足球"> football<br>
+    <input type="checkbox" name="hobby" value="排球"> volleyball<br>
+
+    <button onclick="AllCheck()">全选</button>
+    <button onclick="AllNotCheck()">全不选</button>
+    <button onclick="NotCheck()">反选</button>
+
+</body>
+</html>

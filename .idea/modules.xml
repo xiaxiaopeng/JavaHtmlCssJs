@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaScript.iml" filepath="$PROJECT_DIR$/JavaScript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JS_Code/JavaScript_Code.iml" filepath="$PROJECT_DIR$/JS_Code/JavaScript_Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebHtml.iml" filepath="$PROJECT_DIR$/WebHtml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polo-360.iml" filepath="$PROJECT_DIR$/polo-360.iml" />
+    </modules>
+  </component>
+</project>

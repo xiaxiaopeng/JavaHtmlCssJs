@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式继承</title>
+    <style>
+        body{
+            font-size: 30px;
+        }
+        p#p2{
+            background-color: red;
+        }
+        *{
+            font-size: 50px;
+        }
+        #p2{
+            background-color: red;
+        }
+        .p3{
+            color: green;
+        }
+        .p1{
+            color: yellowgreen;
+            background-color: green !important;
+        }
+    </style>
+</head>
+<body>
+    <p class="p1 p3" id="p2" style="background-color: orange">我是p标签中的文字
+    <span>我是p元素中的span</span>
+    </p>
+    <span>我是p元素外的span</span>
+</body>
+</html>
